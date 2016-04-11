@@ -1,15 +1,16 @@
 SDIR = src
 ODIR = bin
 CXXFILES = main
-CXX = g++
+CXX = g++-1
 
-ifeq ($(TRAVIS), 1)
-	CXX = g++-5
+ifneq "$(shell which g++-6)" ""
+	CXX = g++-6
 endif
 
 CXXFLAGS = -std=c++11 -O1 -I googletest/googletest/include --coverage -Wall -Werror
+
 ifeq ($(TESTING), 1)
-	CXXFLAGS = $(CXXFLAGS) -DTESTING
+	CXXFLAGS += -DTESTING
 endif
 
 LDFLAGS = googletest/googlemock/gtest/libgtest.a googletest/googlemock/gtest/libgtest_main.a -lpthread
