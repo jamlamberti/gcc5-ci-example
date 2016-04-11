@@ -104,7 +104,7 @@ We want to automate the whole process from above (plus some other things). To do
 
 I broke out installing GoogleTest and Code Coverage to their own bash scripts. These are called from within the .travis.yml file. 
 
-# Enabling Travis-CI
+# Enabling Travis CI
 
 In your Github repo, click on Settings, then on the left hand side browse to the Webhooks & Services (github.com/\<username\>/\<repo-name\>/settings/hooks). Next browse to [https://travis-ci.org/profile/](https://travis-ci.org/profile/) and turn on the switch for the repository. 
 
