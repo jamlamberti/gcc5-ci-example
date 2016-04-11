@@ -92,7 +92,7 @@ genhtml –o reports coverage.info
 
 # Enabling Travis-CI
 
-In your Github repo, click on Settings, then on the left hand side browse to the Webhooks & Services (https://github.com/%username%/%repo-name%/settings/hooks). Next browse to [https://travis-ci.org/profile/](https://travis-ci.org/profile/) and turn on the switch for the repository. 
+In your Github repo, click on Settings, then on the left hand side browse to the Webhooks & Services (github.com/%username%/%repo-name%/settings/hooks). Next browse to [https://travis-ci.org/profile/](https://travis-ci.org/profile/) and turn on the switch for the repository. 
 
 Click on add service and add Travis CI. Leave the User, Token and Domain fields blank and make sure the Active checkbox is selected. 
 
@@ -102,5 +102,5 @@ Sign into [https://codecov.io](https://codecov.io) with your Github Account then
 
 # Testing the Integration
 
-Try pushing code to your repo and refresh the Webhooks page (https://github.com/<username>/<repo-name>/settings/hooks). There should be a checkmark next to Travis CI if the request when through successfully. Now you can browse to [https://travis-ci.org/](https://travis-ci.org/) and should see your repo listed along the left side menu. 
+Try pushing code to your repo and refresh the Webhooks page (github.com/<username>/<repo-name>/settings/hooks). There should be a checkmark next to Travis CI if the request when through successfully. Now you can browse to [https://travis-ci.org/](https://travis-ci.org/) and should see your repo listed along the left side menu. 
 
