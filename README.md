@@ -96,9 +96,9 @@ In your Github repo, click on Settings, then on the left hand side browse to the
 
 Click on add service and add Travis CI. Leave the User, Token and Domain fields blank and make sure the Active checkbox is selected. 
 
-# Enabling CodeCov
+# Enabling Coveralls
 
-Sign into [https://codecov.io](https://codecov.io) with your Github Account then click on "Add a new repository". Select your repository and you should be good to go! You do not need to do anything with the secret token.
+Sign into [https://coveralls.io](https://coveralls.io) with your Github Account then click on Repos then click on Add Repo. Turn on your repository and you should be good to go! You do not need to do anything with the secret token.
 
 # Testing the Integration
 
