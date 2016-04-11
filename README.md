@@ -1,5 +1,9 @@
 # Setting up Continuous Integration for GCC-5
 
+This guide will cover setting up a testing environment locally as well as a hosted CI environment. The CI part will leverage Travis CI for building and testing code and Coveralls for hosting code coverage reports. 
+
+# Local Install
+
 ## Grabbing the Dependencies
 
 First, we need to install Google Test (Google’s C/C++ testing framework). GoogleTest requires cmake, which is included in the APT repository. To install:
@@ -43,7 +47,7 @@ Before we build our code, it is useful to see code coverage and check for issues
 
 ## Building the Sample Application
 
-By now, you should be able to build the sample application!
+By now, you should be able to build the sample application! If you take a look in the Makefile, I link in the two archive libraries from GoogleTest. I also pass the --coverage flag in when building to enable coverage reports.
 
 ```
 make
@@ -89,6 +93,12 @@ Or we can generate a report and open it up in our browser!
 mkdir -p reports
 genhtml –o reports coverage.info
 ```
+
+# Enabling CI
+
+We want to automate the whole process from above (plus some other things). To do this, we can create a .travis.yml file. This file declares the language our project uses as well as any commands to run. The order is before_install, install, script and finally after_success. We want to install all of our dependencies in before_install. Then we can install our own project in install (not used here). Finally we want to build and run our code. If this works, we can upload our coverage reports!
+
+I broke out installing GoogleTest and Code Coverage to their own bash scripts. These are called from within the .travis.yml file. 
 
 # Enabling Travis-CI
 
