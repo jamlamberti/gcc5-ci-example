@@ -1,0 +1,8 @@
+*.o
+*.so
+*.pyc
+*.swp
+*~
+bin
+googletest
+coverage.info
