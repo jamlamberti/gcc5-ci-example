@@ -85,7 +85,7 @@ And finally we can generate code coverage results:
 
 Once we have the coverage information, we want to remove the coverage results for the GoogleTest code base and other external C/C++ code.
 
-```lcov --remove coverage.info ‘/usr/*’ ‘googletest/*’ --output-file coverage.info```
+```lcov --remove coverage.info '/usr/*' 'googletest/*' --output-file coverage.info```
 
 We can output a summary of the results
 
