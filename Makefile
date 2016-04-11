@@ -3,8 +3,8 @@ ODIR = bin
 CXXFILES = main
 CXX = g++-1
 
-ifneq "$(shell which g++-6)" ""
-	CXX = g++-6
+ifneq "$(shell which g++-5)" ""
+	CXX = g++-5
 endif
 
 CXXFLAGS = -std=c++11 -O1 -I googletest/googletest/include --coverage -Wall -Werror
