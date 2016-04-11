@@ -91,7 +91,7 @@ We can output a summary of the results
 
 ```lcov --list coverage.info```
 
-Or we can generate a report and open it up in our browser!
+Or we can generate a report (to the reports directory) and open it up in our browser!
 
 ```
 mkdir -p reports
