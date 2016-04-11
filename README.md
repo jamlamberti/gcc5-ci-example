@@ -1,5 +1,9 @@
 # Setting up Continuous Integration for GCC-5
 
+[![Build Status](https://travis-ci.org/jamlamberti/gcc5-ci-example.svg?branch=master)](https://travis-ci.org/jamlamberti/gcc5-ci-example)
+[![Coverage Status](https://coveralls.io/repos/github/jamlamberti/gcc5-ci-example/badge.svg?branch=master)](https://coveralls.io/github/jamlamberti/gcc5-ci-example?branch=master)
+
+
 This guide will cover setting up a testing environment locally as well as a hosted CI environment. The CI part will leverage Travis CI for building and testing code and Coveralls for hosting code coverage reports. 
 
 # Local Install
