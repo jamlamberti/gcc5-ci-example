@@ -1,0 +1,21 @@
+language: C++
+
+before_install:
+    - sudo apt-get install build-essential cppcheck git lcov -y
+    - sudo add-apt-repository ppa:ubuntu-toolchain-r/test -y
+    - sudo apt-get update -q
+    - sudo apt-get install gcc-5 g++-5 -y
+    - ./install_gtest.sh
+    - gem install coveralls-lcov
+
+script:
+    - make TESTING=1
+    - bin/main
+    - ./code_cov.sh
+    - make clean
+    - make
+    - bin/main
+
+after_success:
+    - cppcheck src/ --error-exitcode=1
+    - coveralls-lcov coverage.info
