@@ -1,7 +1,7 @@
 SDIR = src
 ODIR = bin
 CXXFILES = main
-CXX = g++-1
+CXX = g++
 
 ifneq "$(shell which g++-5)" ""
 	CXX = g++-5
