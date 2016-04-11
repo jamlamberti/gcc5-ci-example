@@ -98,7 +98,7 @@ Click on add service and add Travis CI. Leave the User, Token and Domain fields 
 
 # Enabling CodeCov
 
-Sign into [https://codecov.io](https://codecov.io) with your Github Account then click on "Add a new repository". Select your repository and you should be good to go!
+Sign into [https://codecov.io](https://codecov.io) with your Github Account then click on "Add a new repository". Select your repository and you should be good to go! You do not need to do anything with the secret token.
 
 # Testing the Integration
 
