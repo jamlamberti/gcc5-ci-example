@@ -39,7 +39,7 @@ Then we need to update APT to fetch the new packages.
 
 ```sudo apt-get update –q```
 
-The -q “quiets” apt so the log file doesn’t get too large. With that being said, Travis CI will kill any builds where no output is produced in a 10 minute period.
+The -q "quiets" apt so the log file doesn’t get too large. With that being said, Travis CI will kill any builds where no output is produced in a 10 minute period.
 
 Finally, we can install the 5.3 compiler:
 
